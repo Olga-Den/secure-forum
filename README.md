@@ -1,26 +1,6 @@
 # SecureForum
-Secure web app
 
-## Technologie
-Docker, Django, PostgreSQL (przez AWS)
-
-## Uruchomienie
-
-```bash
-git clone https://github.com/rosemint5/secure-forum.git
-
-cd secure-forum
-
-docker compose up --build
-
-```
-# SecureForum
-
-SecureForum to webowa aplikacja forum zbudowana na Django 5.2, uruchamiana w kontenerach Docker z PostgreSQL jako bazą danych. Projekt kładzie nacisk na bezpieczeństwo — każda warstwa aplikacji, od przechowywania haseł po nagłówki HTTP, jest skonfigurowana zgodnie z aktualnymi standardami.
-
-## Wymagania
-
-- Docker i Docker Compose
+SecureForum to webowa aplikacja forum zbudowana na Django 5.2, uruchamiana w kontenerach Docker z PostgreSQL jako bazą danych. Projekt kładzie nacisk na bezpieczeństwo - każda warstwa aplikacji, od przechowywania haseł po nagłówki HTTP, jest skonfigurowana zgodnie z aktualnymi standardami.
 
 ## Uruchomienie
 
@@ -34,11 +14,11 @@ Aplikacja będzie dostępna pod adresem `http://localhost`. Przy starcie kontene
 
 ## Stack technologiczny
 
-- **Python 3.11 / Django 5.2.7** — warstwa aplikacji
-- **PostgreSQL** — baza danych
-- **Argon2** — algorytm haszowania haseł (z fallbackiem na PBKDF2 i bcrypt-SHA256)
-- **django-axes** — ochrona przed atakami brute-force
-- **Docker + Docker Compose** — konteneryzacja
+- **Python 3.11 / Django 5.2.7** - warstwa aplikacji
+- **PostgreSQL** - baza danych przez AWS
+- **Argon2** - algorytm haszowania haseł (z fallbackiem na PBKDF2 i bcrypt-SHA256)
+- **django-axes** - ochrona przed atakami brute-force
+- **Docker + Docker Compose** - konteneryzacja
 
 ## Struktura projektu
 
@@ -100,9 +80,9 @@ Każde istotne zdarzenie jest zapisywane wraz z nazwą użytkownika, adresem IP 
 
 ## Komendy zarządzające
 
-- `wait_for_db` — czeka na dostępność bazy danych przed startem aplikacji
-- `ensure_admin` — tworzy konto administratora, jeśli jeszcze nie istnieje
-- `createsu` — tworzy superużytkownika Django
+- `wait_for_db` - czeka na dostępność bazy danych przed startem aplikacji
+- `ensure_admin` - tworzy konto administratora, jeśli jeszcze nie istnieje
+- `createsu` - tworzy superużytkownika Django
 
 ## Licencja
 
