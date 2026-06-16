@@ -84,6 +84,3 @@ Każde istotne zdarzenie jest zapisywane wraz z nazwą użytkownika, adresem IP 
 - `ensure_admin` - tworzy konto administratora, jeśli jeszcze nie istnieje
 - `createsu` - tworzy superużytkownika Django
 
-## Licencja
-
-MIT
